@@ -19,3 +19,29 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes expand {
+  from {
+    height: 5rem; /* Altura inicial da navbar */
+  }
+  to {
+    height: 14rem; /* Altura expandida */
+  }
+}
+
+@keyframes collapse {
+  from {
+    height: 14rem; /* Altura expandida */
+  }
+  to {
+    height: 5rem; /* Altura inicial da navbar */
+  }
+}
+
+.animate-expand {
+  animation: expand 0.3s ease forwards;
+}
+
+.animate-collapse {
+  animation: collapse 0.3s ease forwards;
+}
