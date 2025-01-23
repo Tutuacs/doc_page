@@ -31,7 +31,7 @@ const Navbar = () => {
             {/* Navbar principal */}
             <div className="flex justify-between items-center">
                 {/* Botão de toggle à esquerda */}
-                <div className="flex text-xl focus:outline-none ml-[20%] grid-cols-2">
+                <div className="flex text-xl focus:outline-none ml-[10%] lg:ml-[20%] grid-cols-2">
                     <button
                         onClick={toggleNavbar}
                         className="p-2"
@@ -68,7 +68,7 @@ const Navbar = () => {
             </div>
             {/* Links revelados ao expandir */}
             {isExpanded && (
-                <div className="grid grid-cols-1 justify-between mr-[10%] ml-[20%] mt-10 gap-4">
+                <div className="grid grid-cols-1 justify-between mr-[10%] ml-[10%] lg:ml-[20%] mt-10 gap-4">
                     {/* Esquerda */}
                     <div className="flex flex-col gap-4 flex-1">
                         <Link href="/Sobre" className="hover:underline" onClick={() => setIsExpanded(false)}>

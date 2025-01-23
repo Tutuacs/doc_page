@@ -5,7 +5,7 @@ import Assinatura from "./Assinatura";
 export default function Footer() {
     return (
         <main>
-            <div className="mb-[-150]">
+            <div className="mb">
                 <div className="flex lg:flex-row flex-col items-center mx-auto h-60 w-[80%] lg:w-[60%] rounded-lg">
                     <div className="bg-tertiary p-4 lg:p-0 flex flex-col h-full w-full lg:w-1/2 justify-center rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
                         <div className="mx-auto">
@@ -30,7 +30,7 @@ export default function Footer() {
                     </div>
                     <div className="bg-secondary flex flex-col p-4 lg:p-0 gap-2 lg:gap-4 w-full lg:w-1/2 h-full justify-center rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none">
                         <div className="mx-auto">
-                            <div className="text-[#033147e3] text-2xl font-bold text-center">Acompanhe nas redes sociais</div>
+                            <div className="text-[#033147e3] text-2xl font-bold text-start md:text-center lg:text-center">Acompanhe nas redes sociais</div>
                             <div className="mt-4 text-center flex gap-8 justify-center">
                             { /* Facebook */}
                                 <Link href="/" className="hover:animate-pulse">
@@ -86,13 +86,13 @@ export default function Footer() {
             <div className="bg-primary min-h-96">
             </div>
             <div className="bg-[#012230e3] text-slate-300 py-2 min-h-8 flex justify-between items-center italic text-sm">
-                <div className="flex items-center gap-4 ml-[10%] lg:ml-[20%]">
+                <div className="flex items-center gap-4 ml-[5%] mr:ml-[10%] lg:ml-[20%]">
                     <Assinatura />
                     <span className="justify-center mt-1">
                         Todos os direitos reservados
                     </span>
                 </div>
-                <div className="ml-[10%] lg:mr-[20%] mt-1">Desenvolvido por <span className="font-bold">Arthur Silva</span>.</div>
+                <div className="mr-[5%] md:mr-[10%] lg:mr-[20%] mt-1">Desenvolvido por <span className="font-bold">Arthur Silva</span>.</div>
             </div>
         </main>
     )

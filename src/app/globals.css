@@ -76,3 +76,7 @@ body {
 .animate-collapse {
   animation: collapse 0.3s ease forwards;
 }
+
+.mb {
+  margin-bottom: -150px;
+}
