@@ -23,14 +23,14 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`${isTop && !isExpanded ? "bg-transparent" : "bg-amber-950 bg-opacity-90"
+            className={`${isTop && !isExpanded ? "bg-transparent" : "bg-primary"
                 } text-white flex flex-col w-full fixed p-4 overflow-hidden ${isExpanded ? "animate-expand" : "animate-collapse"
                 } transition-all duration-300 ease-in-out`}
         >
             {/* Navbar principal */}
             <div className="flex justify-between items-center">
                 {/* Botão de toggle à esquerda */}
-                <div className="flex text-xl focus:outline-none ml-[5%] grid-cols-2">
+                <div className="flex text-xl focus:outline-none ml-[20%] grid-cols-2">
                     <button
                         onClick={toggleNavbar}
                         className="p-2"
@@ -42,24 +42,24 @@ const Navbar = () => {
                                 </svg>
 
                             ) : (
-                                <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 10.9167C0.585786 10.9167 0.25 11.2525 0.25 11.6667C0.25 12.0809 0.585786 12.4167 1 12.4167V10.9167ZM33 12.4167C33.4142 12.4167 33.75 12.0809 33.75 11.6667C33.75 11.2525 33.4142 10.9167 33 10.9167V12.4167ZM1 21.5833C0.585786 21.5833 0.25 21.9191 0.25 22.3333C0.25 22.7475 0.585786 23.0833 1 23.0833V21.5833ZM33 23.0833C33.4142 23.0833 33.75 22.7475 33.75 22.3333C33.75 21.9191 33.4142 21.5833 33 21.5833V23.0833ZM1 0.25C0.585786 0.25 0.25 0.585786 0.25 1C0.25 1.41421 0.585786 1.75 1 1.75V0.25ZM33 1.75C33.4142 1.75 33.75 1.41421 33.75 1C33.75 0.585786 33.4142 0.25 33 0.25V1.75ZM1 12.4167H33V10.9167H1V12.4167ZM1 23.0833H33V21.5833H1V23.0833ZM1 1.75H33V0.25H1V1.75Z" fill="white"></path>
                                 </svg>
                             )
                         }
                     </button>
-                    <Link href="/" className={`${isExpanded? "mt-1": ""}`} onClick={() => setIsExpanded(false)}>
+                    <Link href="/" onClick={() => setIsExpanded(false)}>
                         <Image width={100} height={40} src="/assinatura.png" alt="" className="" />
                     </Link>
                 </div>
 
-                <div className="flex gap-8 mr-[5%] text-md">
-                    <a href="https://wa.me/+5554996601120" target="_blank" className="flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-amber-950 hover:border-amber-900 hover:text-amber-100">
-                        <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNiNDUzMDkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1waG9uZSI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" alt="" />
-                        <span className="mt-1">(54) 996-601120</span>
+                <div className="hidden lg:flex gap-8 mr-[20%]">
+                    <a href="https://wa.me/+5554996601120" target="_blank" className="hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
+                        <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1waG9uZSI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" alt="" />
+                        <span className="mt-1">(54) 99660-1120</span>
                     </a>
-                    <a href="https://wa.me/+5554996601120" target="_blank" className="flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-amber-950 hover:border-amber-900 hover:text-amber-100">
-                        <Image className="text-amber-700" width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNiNDUzMDkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhciI+PHBhdGggZD0iTTggMnY0Ii8+PHBhdGggZD0iTTE2IDJ2NCIvPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgeD0iMyIgeT0iNCIgcng9IjIiLz48cGF0aCBkPSJNMyAxMGgxOCIvPjwvc3ZnPg==" alt="" />
+                    <a href="https://wa.me/+5554996601120" target="_blank" className="hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
+                        <Image className="text-amber-700" width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg==" alt="" />
                         <span className="mt-1">Agendamentos</span>
                     </a>
                 </div>
@@ -67,23 +67,23 @@ const Navbar = () => {
 
             {/* Links revelados ao expandir */}
             {isExpanded && (
-                <div className="grid grid-cols-3 justify-between mr-[10%] ml-[10%] mt-10 gap-4">
+                <div className="grid grid-cols-1 justify-between mr-[10%] ml-[20%] mt-10 gap-4">
                     {/* Esquerda */}
                     <div className="flex flex-col gap-2 flex-1">
-                        <Link href="/about" className="hover:underline" onClick={() => setIsExpanded(false)}>
+                        <Link href="/Sobre" className="hover:underline" onClick={() => setIsExpanded(false)}>
                             Sobre
                         </Link>
-                        <a href="#link2" className="hover:underline">
-                            Link 2
-                        </a>
-                        <a href="#link3" className="hover:underline">
-                            Link 3
-                        </a>
+                        <Link href="/Contato" className="hover:underline" onClick={() => setIsExpanded(false)}>
+                            Contato
+                        </Link>
+                        <Link href="/Mitos" className="hover:underline" onClick={() => setIsExpanded(false)}>
+                            Mitos da Ortopedia
+                        </Link>
                     </div>
 
                     {/* Centro */}
                     <div className="flex-col gap-2 flex-1 text-left hidden md:flex sm:flex">
-                        <a href="#link4" className="hover:underline">
+                        {/* <a href="#link4" className="hover:underline">
                             Link 4
                         </a>
                         <a href="#link5" className="hover:underline">
@@ -91,12 +91,12 @@ const Navbar = () => {
                         </a>
                         <a href="#link6" className="hover:underline">
                             Link 6
-                        </a>
+                        </a> */}
                     </div>
 
                     {/* Direita */}
                     <div className="flex-col gap-2 flex-1 text-left hidden md:flex sm:flex">
-                        Right
+                        {/* Right */}
                     </div>
                 </div>
             )}
