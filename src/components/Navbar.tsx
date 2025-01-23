@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Navbar = () => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -22,14 +23,14 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`${isTop && !isExpanded ? "bg-transparent" : "bg-gray-800 bg-opacity-90"
+            className={`${isTop && !isExpanded ? "bg-transparent" : "bg-amber-950 bg-opacity-90"
                 } text-white flex flex-col w-full fixed p-4 overflow-hidden ${isExpanded ? "animate-expand" : "animate-collapse"
                 } transition-all duration-300 ease-in-out`}
         >
             {/* Navbar principal */}
             <div className="flex justify-between items-center">
                 {/* Botão de toggle à esquerda */}
-                <div className="text-xl focus:outline-none ml-[10%] grid-cols-2">
+                <div className="flex text-xl focus:outline-none ml-[5%] grid-cols-2">
                     <button
                         onClick={toggleNavbar}
                         className="p-2"
@@ -47,19 +48,20 @@ const Navbar = () => {
                             )
                         }
                     </button>
-                    <Link href="/" className="ml-10">
-                        Home
+                    <Link href="/" className={`${isExpanded? "mt-1": ""}`} onClick={() => setIsExpanded(false)}>
+                        <Image width={100} height={40} src="/assinatura.png" alt="" className="" />
                     </Link>
                 </div>
 
-                {/* Botões à direita */}
-                <div className="flex gap-4 mr-[10%]">
-                    <button className="bg-gray-600 px-4 py-2 rounded hover:bg-gray-700 transition">
-                        Action 1
-                    </button>
-                    <button className="bg-gray-600 px-4 py-2 rounded hover:bg-gray-700 transition">
-                        Action 2
-                    </button>
+                <div className="flex gap-8 mr-[5%] text-md">
+                    <a href="https://wa.me/+5554996601120" target="_blank" className="flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-amber-950 hover:border-amber-900 hover:text-amber-100">
+                        <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNiNDUzMDkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1waG9uZSI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" alt="" />
+                        <span className="mt-1">(54) 996-601120</span>
+                    </a>
+                    <a href="https://wa.me/+5554996601120" target="_blank" className="flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-amber-950 hover:border-amber-900 hover:text-amber-100">
+                        <Image className="text-amber-700" width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNiNDUzMDkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhciI+PHBhdGggZD0iTTggMnY0Ii8+PHBhdGggZD0iTTE2IDJ2NCIvPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgeD0iMyIgeT0iNCIgcng9IjIiLz48cGF0aCBkPSJNMyAxMGgxOCIvPjwvc3ZnPg==" alt="" />
+                        <span className="mt-1">Agendamentos</span>
+                    </a>
                 </div>
             </div>
 
@@ -69,7 +71,7 @@ const Navbar = () => {
                     {/* Esquerda */}
                     <div className="flex flex-col gap-2 flex-1">
                         <Link href="/about" className="hover:underline" onClick={() => setIsExpanded(false)}>
-                            About
+                            Sobre
                         </Link>
                         <a href="#link2" className="hover:underline">
                             Link 2
