@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Assinatura from "./Assinatura";
 
 const Navbar = () => {
     const [isExpanded, setIsExpanded] = useState(false);
@@ -49,7 +50,8 @@ const Navbar = () => {
                         }
                     </button>
                     <Link href="/" onClick={() => setIsExpanded(false)}>
-                        <Image width={100} height={40} src="/assinatura.png" alt="" className="" />
+                        {/* <Image width={100} height={40} src="/assinatura.png" alt="" className="" /> */}
+                        <Assinatura />
                     </Link>
                 </div>
 
@@ -64,12 +66,11 @@ const Navbar = () => {
                     </a>
                 </div>
             </div>
-
             {/* Links revelados ao expandir */}
             {isExpanded && (
                 <div className="grid grid-cols-1 justify-between mr-[10%] ml-[20%] mt-10 gap-4">
                     {/* Esquerda */}
-                    <div className="flex flex-col gap-2 flex-1">
+                    <div className="flex flex-col gap-4 flex-1">
                         <Link href="/Sobre" className="hover:underline" onClick={() => setIsExpanded(false)}>
                             Sobre
                         </Link>
@@ -77,7 +78,7 @@ const Navbar = () => {
                             Contato
                         </Link> */} {/* Without Contact */}
                         <Link href="/Mitos" className="hover:underline" onClick={() => setIsExpanded(false)}>
-                            Mitos da Ortopedia
+                            Mitos e Verdades da Ortopedia
                         </Link>
                     </div>
 

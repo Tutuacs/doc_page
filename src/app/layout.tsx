@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Juliano Machado",
+  title: "Dr. Juliano Machado",
   description: "Ortopedista e Traumatologista",
 };
 
