@@ -73,9 +73,9 @@ const Navbar = () => {
                         <Link href="/Sobre" className="hover:underline" onClick={() => setIsExpanded(false)}>
                             Sobre
                         </Link>
-                        <Link href="/Contato" className="hover:underline" onClick={() => setIsExpanded(false)}>
+                        {/* <Link href="/Contato" className="hover:underline" onClick={() => setIsExpanded(false)}>
                             Contato
-                        </Link>
+                        </Link> */} {/* Without Contact */}
                         <Link href="/Mitos" className="hover:underline" onClick={() => setIsExpanded(false)}>
                             Mitos da Ortopedia
                         </Link>
