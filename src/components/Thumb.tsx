@@ -8,7 +8,7 @@ export default function Thumb() {
     useEffect(() => {
         const tl = gsap.timeline();
 
-        const Line = ($el: any) => {
+        const Line = ($el: HTMLElement) => {
             const $paths = $el.querySelectorAll(".path");
             const tl = gsap.timeline();
             const duration = gsap.utils.random(40, 80);
@@ -63,7 +63,7 @@ export default function Thumb() {
             tl.seek(gsap.utils.random(10, 20));
         };
 
-        const elements = gsap.utils.toArray(".g");
+        const elements = gsap.utils.toArray<HTMLElement>(".g");
         elements.forEach(($el) => Line($el));
 
         gsap.to(".thumb", { opacity: 1, duration: 1 });
