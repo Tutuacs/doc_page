@@ -1,30 +1,9 @@
 import Container from "@/components/Container";
-import VideoCard from "@/components/VideoCard";
-
-type VideoCardProps = {
-  title: string;
-  description: string;
-  image: string;
-  video: string;
-  size: VideoCardSize;
-  display: VideoCardDisplay;
-  autoplay: boolean;
-}
-
-enum VideoCardSize {
-  big = 500,
-  md = 300
-}
-
-enum VideoCardDisplay {
-  right = 1,
-  left = 2,
-  center = 3,
-}
+import VideoCard, { VideoCardDisplay, VideoCardProps, VideoCardSize } from "@/components/VideoCard";
 
 export default function Home() {
 
-  let video = {
+  const video: VideoCardProps = {
     title: "Me conheça",
     description: "Prazer, me chamo Juliano Machado, sou Ortopedista e Traumatologista.",
     image: "Thumbnail",
@@ -35,7 +14,7 @@ export default function Home() {
     muted: true,
   }
 
-  let video2 = {
+  const video2: VideoCardProps = {
     title: "Me conheça",
     description: "Prazer, me chamo Juliano Machado, sou Ortopedista e Traumatologista.",
     image: "Thumbnail",
@@ -46,7 +25,7 @@ export default function Home() {
     muted: true,
   }
 
-  let video3 = {
+  const video3: VideoCardProps = {
     title: "Me conheça",
     description: "Prazer, me chamo Juliano Machado, sou Ortopedista e Traumatologista.",
     image: "Thumbnail",

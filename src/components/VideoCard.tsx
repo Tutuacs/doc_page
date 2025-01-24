@@ -1,6 +1,6 @@
 import Video from "./Video";
 
-type VideoCardProps = {
+export type VideoCardProps = {
     title: string;
     description: string;
     image: string;
@@ -11,12 +11,12 @@ type VideoCardProps = {
     muted: boolean;
 }
 
-enum VideoCardSize {
+export enum VideoCardSize {
     big = 500,
     md = 300
 }
 
-enum VideoCardDisplay {
+export enum VideoCardDisplay {
     right = 1,
     left = 2,
     center = 3,
