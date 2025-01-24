@@ -5,8 +5,6 @@ import gsap from "gsap";
 
 export default function Thumb() {
 
-    var i = 8;
-
     useEffect(() => {
         const tl = gsap.timeline();
 
