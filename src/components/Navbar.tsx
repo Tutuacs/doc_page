@@ -31,7 +31,7 @@ const Navbar = () => {
             {/* Navbar principal */}
             <div className="flex justify-between items-center">
                 {/* Botão de toggle à esquerda */}
-                <div className="flex text-xl focus:outline-none ml-[10%] lg:ml-[20%] grid-cols-2">
+                <div className="flex text-xl focus:outline-none ml-[10%] lg:ml-[15%] grid-cols-2">
                     <button
                         onClick={toggleNavbar}
                         className="p-2"
@@ -55,20 +55,20 @@ const Navbar = () => {
                     </Link>
                 </div>
 
-                <div className="hidden lg:flex gap-8 mr-[20%]">
+                <div className="hidden lg:flex gap-8 mr-[15%]">
                     <a href="https://wa.me/+5554996601120" target="_blank" className="bg-primary hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
                         <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1waG9uZSI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" alt="" />
                         <span className="mt-1">(54) 99660-1120</span>
                     </a>
                     <a href="https://wa.me/+5554996601120" target="_blank" className="bg-primary hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
-                        <Image className="text-amber-700" width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg==" alt="" />
+                        <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg==" alt="" />
                         <span className="mt-1">Agendamentos</span>
                     </a>
                 </div>
             </div>
             {/* Links revelados ao expandir */}
             {isExpanded && (
-                <div className="grid grid-cols-1 justify-between mr-[10%] ml-[10%] lg:ml-[20%] mt-10 gap-4">
+                <div className="grid grid-cols-1 justify-between mr-[10%] ml-[10%] lg:ml-[15%] mt-10 gap-4">
                     {/* Esquerda */}
                     <div className="flex flex-col gap-4 flex-1">
                         <Link href="/Sobre" className="hover:underline" onClick={() => setIsExpanded(false)}>
@@ -81,7 +81,6 @@ const Navbar = () => {
                             Mitos e Verdades da Ortopedia
                         </Link>
                     </div>
-
                     {/* Centro */}
                     <div className="flex-col gap-2 flex-1 text-left hidden md:flex sm:flex">
                         {/* <a href="#link4" className="hover:underline">

@@ -5,34 +5,30 @@ import Assinatura from "./Assinatura";
 export default function Footer() {
     return (
         <main>
-            <div className="mb">
+            <div className="-mb-[150px]">
                 <div className="flex lg:flex-row flex-col items-center mx-auto h-60 w-[80%] lg:w-[60%] rounded-lg">
                     <div className="bg-tertiary p-4 lg:p-0 flex flex-col h-full w-full lg:w-1/2 justify-center rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
                         <div className="mx-auto">
-                            <div className="text-3xl text-[#EEEEEE] font-bold text-center">Agende sua consulta</div>
+                            <div className="lg:text-3xl text-xl text-[#EEEEEE] font-bold text-center">Agende sua consulta</div>
+                            {/* <hr className="mt-2 mb-1 border-[#033147]" /> */}
                             <div className="mt-4 text-center">
                                 <a
                                     href="https://wa.me/+5554996601120"
                                     target="_blank"
-                                    className="flex gap-3 justify-center text-center border-2 py-4 px-2 rounded-lg border-secondary hover:border-[#033147e3] hover:text-[#033147e3] transition-colors text-white"
+                                    className=" bg-primary flex gap-3 justify-center text-center border-2 py-4 px-2 rounded-2xl border-[#033147] hover:border-[#EEEEEE] hover:text-[#dbe0da] transition-colors text-white"
                                 >
-                                    <Image
-                                        className="text-amber-700"
-                                        width={30}
-                                        height={30}
-                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMzMxNDciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg=="
-                                        alt="Agendamento"
-                                    />
-                                    <span className="mt-1">Agendamentos</span>
+                                    <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg==" alt="" />
+                                    <span className="mt-1 ">Agendamentos</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div className="bg-secondary flex flex-col p-4 lg:p-0 gap-2 lg:gap-4 w-full lg:w-1/2 h-full justify-center rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none">
                         <div className="mx-auto">
-                            <div className="text-[#033147e3] text-2xl font-bold text-start md:text-center lg:text-center">Acompanhe nas redes sociais</div>
+                            <div className="text-[#033147e3] lg:text-2xl text-xl font-bold text-center">Acompanhe nas redes sociais</div>
+                            <hr className="mt-2 mb-1 border-[#033147]" />
                             <div className="mt-4 text-center flex gap-8 justify-center">
-                            { /* Facebook */}
+                                { /* Facebook */}
                                 <Link href="/" className="hover:animate-pulse">
                                     <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <g clipPath="url(#clip0_17_61)">
@@ -85,14 +81,18 @@ export default function Footer() {
             </div>
             <div className="bg-primary min-h-96">
             </div>
-            <div className="bg-[#012230e3] text-slate-300 py-2 min-h-8 flex justify-between items-center italic text-sm">
-                <div className="flex items-center gap-4 ml-[5%] mr:ml-[10%] lg:ml-[20%]">
+            <div className="bg-[#033147] text-slate-300 py-2 min-h-8 flex lg:flex-row flex-col align-center justify-center lg:justify-between items-center italic text-sm">
+                <div className="flex justify-center items-center mt-1 mb-3 w-full">
                     <Assinatura />
                     <span className="justify-center mt-1">
                         Todos os direitos reservados
                     </span>
                 </div>
-                <div className="mr-[5%] md:mr-[10%] lg:mr-[20%] mt-1">Desenvolvido por <span className="font-bold">Arthur Silva</span>.</div>
+                <hr className="border-1 ml-[5%] mr:ml-[10%] lg:ml-[20%] w-[70%] mb-1 lg:hidden" />
+                <div className="flex justify-center items-center mt-1 mb-3 w-full">
+                    <p>Desenvolvido por </p>
+                    <span className="ml-1 font-bold">Arthur Silva</span>
+                </div>
             </div>
         </main>
     )
