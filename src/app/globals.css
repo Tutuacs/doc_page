@@ -14,7 +14,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #EEEEEE;
-    --foreground: #200b01;
+    --foreground: #000000;
   }
 }
 
@@ -40,6 +40,14 @@
 
 .border-tertiary {
   border-color: var(--tertiary);
+}
+
+.bg-quaternary {
+  background-color: var(--quaternary);
+}
+
+.border-quaternary {
+  border-color: var(--quaternary);
 }
 
 .color-background {
@@ -76,10 +84,6 @@ body {
 
 .animate-collapse {
   animation: collapse 0.3s ease forwards;
-}
-
-.mb {
-  margin-bottom: -150px;
 }
 
 .thumb {
