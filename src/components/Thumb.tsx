@@ -76,14 +76,13 @@ export default function Thumb() {
     }, []);
 
     return (
-        <main className="bg-blue-950 w-full h-96">
+        <main className="bg-blue-950 w-full h-48 lg:h-96">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="none" className="thumb">
                 <defs />
                 <linearGradient id="SVGID_1_" x1="2880" x2="2880" y1="909.66" y2="170.6" gradientUnits="userSpaceOnUse">
                     <stop offset="0" stopColor="#033147" />
                     <stop offset="1" stopColor="#009688" />
                 </linearGradient>
-
                 <g>
                     {Array.from({ length: 8 }).map((_, index) => (
                         <g key={index} className="g">

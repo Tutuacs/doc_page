@@ -17,17 +17,26 @@ export enum VideoCardDisplay {
 
 export default function VideoG({ props }: { props: VideoGProps }) {
     return (
-        <main className={`w-full h-full -mt-40 -mb-20 flex`}>
-            <div className="w-[20%]" />
-            <div className="flex lg:flex-row flex-col h-[800] w-[90%] rounded-2xl border-4 border-tertiary">
-                <div className="bg-[#033147] w-full lg:w-[75%] h-[10%] lg:h-full rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
-                    <h1 className="text-[#009687] font-bold w-full lg:ml-[15%] text-center lg:text-start my-3 lg:my-5 lg:text-2xl text-3xl">{props.title}</h1>
-                    <hr className="w-[80%] ml-[10%] -mt-4 mb-3 hidden lg:flex" />
-                    <p className="lg:ml-[15%] hidden lg:flex text-[#EEEEEE] mr-[10%]">Você já parou para pensar como pequenas decisões podem mudar completamente o rumo da sua vida? Assim como um evento que quase deixamos de ir pode nos trazer boas surpresas, cuidar da sua saúde ortopédica pode ser o início de uma grande transformação.</p><br />
-                    <p className="lg:ml-[15%] hidden lg:flex text-[#EEEEEE] mr-[10%]">Sou o Dr. Juliano Machado, especialista em lesões ortopédicas, e meu objetivo é ajudar você a superar limitações físicas e dores que impedem sua vida de ser plena. Não deixe a dor paralisar seus movimentos e o poco tempo que temos. Imagine como será sua vida daqui a 6 meses ou 1 ano, com mais liberdade de movimento, mais disposição e momentos incríveis ao lado das pessoas que você ama.</p><br />
-                    <p className="lg:ml-[15%] hidden lg:flex text-[#EEEEEE] mr-[10%]">Acredite: cuidar de você é a escolha certa, e eu estarei ao seu lado em cada passo dessa jornada. Vamos começar hoje?</p><br />
+        <main className={`w-full h-full flex flex-col lg:flex-row items-center lg:items-start -mt-8 lg:-mt-40 mb-10 lg:mb-20`}> {/* // ! Change -mt-8 to -mt-4 on animation */}
+            <div className="hidden lg:block w-[5%]" />
+            <div className="flex flex-col lg:flex-row w-full lg:w-[90%] rounded-2xl border border-tertiary shadow-lg overflow-hidden">
+                {/* Left Content: Text Section */}
+                <div className="bg-[#033147] w-full lg:w-[40%] p-6 lg:p-10 flex flex-col justify-center">
+                    <h1 className="text-[#009687] font-bold text-center lg:text-start text-xl lg:text-3xl mb-4">{props.title}</h1>
+                    <hr className="w-[80%] mx-auto lg:mx-0 lg:w-[70%] border-gray-400 mb-4 hidden lg:block" />
+                    <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed mb-4 hidden lg:block">
+                        Você já parou para pensar como pequenas decisões podem mudar completamente o rumo da sua vida? Assim como um evento que quase deixamos de ir pode nos trazer boas surpresas, cuidar da sua saúde ortopédica pode ser o início de uma grande transformação.
+                    </p>
+                    <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed mb-4 hidden lg:block">
+                        Sou o Dr. Juliano Machado, especialista em lesões ortopédicas, e meu objetivo é ajudar você a superar limitações físicas e dores que impedem sua vida de ser plena. Não deixe a dor paralisar seus movimentos e o pouco tempo que temos. Imagine como será sua vida daqui a 6 meses ou 1 ano, com mais liberdade de movimento, mais disposição e momentos incríveis ao lado das pessoas que você ama.
+                    </p>
+                    <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed">
+                        Acredite: cuidar de você é a escolha certa, e eu estarei ao seu lado em cada passo dessa jornada. Vamos começar hoje?
+                    </p>
                 </div>
-                <div className="bg-secondary w-full h-full rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none flex justify-center items-center">
+
+                {/* Right Content: Video Section */}
+                <div className="bg-secondary w-full lg:w-[60%] flex justify-center items-center p-4 lg:p-6">
                     <Video video={props.video} />
                 </div>
             </div>
