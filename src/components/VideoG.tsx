@@ -19,7 +19,7 @@ export default function VideoG({ props }: { props: VideoGProps }) {
     return (
         <main className={`w-full h-full flex flex-col lg:flex-row items-center lg:items-start -mt-8 lg:-mt-40 mb-10 lg:mb-20`}> {/* // ! Change -mt-8 to -mt-4 on animation */}
             <div className="hidden lg:block w-[5%]" />
-            <div className="flex flex-col lg:flex-row w-full lg:w-[90%] rounded-2xl border border-tertiary shadow-lg overflow-hidden">
+            <div className="flex flex-col lg:flex-row w-full lg:w-[90%] rounded-2xl border border-tertiary overflow-hidden shadow-lg">
                 {/* Left Content: Text Section */}
                 <div className="bg-[#033147] w-full lg:w-[40%] p-6 lg:p-10 flex flex-col justify-center">
                     <h1 className="text-[#009687] font-bold text-center lg:text-start text-xl lg:text-3xl mb-4">{props.title}</h1>
