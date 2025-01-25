@@ -1,4 +1,5 @@
 import Container from "@/components/Container";
+import PainHub from "@/components/PainHub";
 import VideoCard, { VideoCardDisplay, VideoCardProps, VideoCardSize } from "@/components/VideoCard";
 import VideoG, { VideoGProps } from "@/components/VideoG";
 
@@ -29,8 +30,14 @@ export default function Home() {
       <main>
         <Container>
           <VideoG props={video1} />
-          <VideoCard props={video} />
         </Container>
+        <div className="w-full h-full bg-quaternary">
+          <Container>
+            <PainHub>
+            </PainHub>
+          </Container>
+        </div>
+          <div className="w-full h-[200px]"></div>
       </main>
     </div>
   );
