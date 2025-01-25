@@ -1,5 +1,6 @@
 import Container from "@/components/Container";
 import VideoCard, { VideoCardDisplay, VideoCardProps, VideoCardSize } from "@/components/VideoCard";
+import VideoG, { VideoGProps } from "@/components/VideoG";
 
 export default function Home() {
 
@@ -14,24 +15,11 @@ export default function Home() {
     muted: true,
   }
 
-  const video2: VideoCardProps = {
-    title: "Me conheça",
-    description: "Prazer, me chamo Juliano Machado, sou Ortopedista e Traumatologista.",
+  const video1: VideoGProps = {
+    title: "O Cuidado Que Você Merece",
     image: "Thumbnail",
     video: "https://www.youtube.com/embed/kNKCqeDnOis?si=8dHZiiZS83nvaCAA?rel=0&autoplay=1&mute=1",
-    size: VideoCardSize.big,
-    display: VideoCardDisplay.center,
-    autoplay: true,
-    muted: true,
-  }
-
-  const video3: VideoCardProps = {
-    title: "Me conheça",
-    description: "Prazer, me chamo Juliano Machado, sou Ortopedista e Traumatologista.",
-    image: "Thumbnail",
-    video: "https://www.youtube.com/embed/kNKCqeDnOis?si=8dHZiiZS83nvaCAA?rel=0&autoplay=1&mute=1",
-    size: VideoCardSize.big,
-    display: VideoCardDisplay.left,
+    display: VideoCardDisplay.right,
     autoplay: true,
     muted: true,
   }
@@ -40,11 +28,8 @@ export default function Home() {
     <div className="min-h-[1500px]">
       <main>
         <Container>
-          <VideoCard props={video}/>
-          <VideoCard props={video2}/>
-          <VideoCard props={video3}/>
-          <VideoCard props={video2}/>
-          <VideoCard props={video}/>
+          <VideoG props={video1} />
+          <VideoCard props={video} />
         </Container>
       </main>
     </div>

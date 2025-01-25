@@ -3,6 +3,8 @@ import Video from "./Video";
 export type VideoCardProps = {
     title: string;
     description: string;
+    description2?: string;
+    description3?: string;
     image: string;
     video: string;
     size: VideoCardSize;
@@ -34,7 +36,7 @@ export default function VideoCard({ props }: { props: VideoCardProps }) {
                     <p className="lg:ml-[15%] hidden lg:flex text-[#EEEEEE] mr-[10%] leading-6">{props.description}</p>
                 </div>
                 <div className="bg-secondary w-full h-full rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none flex justify-center items-center">
-                    <Video props={props}/>
+                    <Video video={props.video}/>
                 </div>
             </div>
             <div className={`${props.display == VideoCardDisplay.left ? "w-[40%]" : props.display == VideoCardDisplay.right ? "w-0" : "w-[20%]"}`}></div>
