@@ -8,7 +8,7 @@ export default function Video(video : { video: string, title: string }) {
                 src={video.video}
                 title={video.title}
                 allowFullScreen={true}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+                allow="web-share">
             </iframe>
         </div>
     )
