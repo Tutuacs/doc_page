@@ -17,8 +17,8 @@ export default function Footer() {
                                     target="_blank"
                                     className=" bg-primary flex gap-3 justify-center text-center border-2 py-4 px-2 rounded-2xl border-[#033147] hover:border-[#EEEEEE] hover:text-[#dbe0da] transition-colors text-white"
                                 >
-                                    <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg==" alt="" />
-                                    <span className="mt-1 ">Agendamentos</span>
+                                    <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg==" alt="icone agendamentos" />
+                                    <span className="mt-1 text-[#009688]">Agendamentos</span>
                                 </a>
                             </div>
                         </div>

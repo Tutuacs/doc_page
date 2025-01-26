@@ -3,19 +3,8 @@ import Video from "./Video";
 export type VideoCardProps = {
     title: string;
     description: string;
-    description2?: string;
-    description3?: string;
-    image: string;
-    video: string;
-    size: VideoCardSize;
+    link: string;
     display: VideoCardDisplay;
-    autoplay: boolean;
-    muted: boolean;
-}
-
-export enum VideoCardSize {
-    big = 500,
-    md = 300
 }
 
 export enum VideoCardDisplay {
@@ -26,20 +15,31 @@ export enum VideoCardDisplay {
 
 export default function VideoCard({ props }: { props: VideoCardProps }) {
     return (
-        <main className={`w-full h-[${props.size}px] my-20 flex`}>
-            <div className={`${props.display == VideoCardDisplay.right ? "w-[40%]" : props.display == VideoCardDisplay.left ? "w-0" : "w-[20%]"}`}></div>
-            <div className="flex lg:flex-row flex-col h-96 w-[70%] rounded-2xl border-4 border-tertiary">
-                <div className="bg-primary w-full lg:w-[75%] h-[20%] lg:h-full rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
-                    <title>{props.title}</title>
-                    <h1 className="text-[#009688] font-bold w-full lg:ml-[15%] text-center lg:text-start my-3 lg:my-5 text-3xl">{props.title}</h1>
-                    <hr className="w-[80%] ml-[10%] -mt-4 mb-3 hidden lg:flex" />
-                    <p className="lg:ml-[15%] hidden lg:flex text-[#EEEEEE] mr-[10%] leading-6">{props.description}</p>
+        <main className="w-full h-full flex flex-col lg:flex-row items-center lg:items-start mt-20">
+            {/* Left Spacer */}
+            <div className={`w-[5%]`}></div>
+
+            {/* Content Wrapper */}
+            <div className="flex flex-col lg:flex-row w-full lg:w-full rounded-2xl border border-tertiary overflow-hidden shadow-lg">
+                {/* Left Content: Text Section */}
+                <div className="bg-primary w-full lg:w-[40%] p-6 lg:p-10 flex flex-col justify-center">
+                    <h1 className="text-[#009688] font-bold text-center lg:text-center text-xl lg:text-xl lg:mb-4 mb-0">{props.title}</h1>
+                    <hr className="w-full mx-auto lg:mx-0 border-gray-400 mb-4 hidden lg:block" />
+                    <p className="text-[#EEEEEE] text-justify text-sm lg:text-md leading-relaxed mb-4 hidden lg:block">
+                        {props.description}
+                    </p>
                 </div>
-                <div className="bg-secondary w-full h-full rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none flex justify-center items-center">
-                    <Video video={props.video}/>
+
+                {/* Right Content: Video Section with Animation */}
+                <div
+                    className={`bg-secondary w-full lg:w-[60%] flex justify-center items-center p-4 lg:p-6 transition-all duration-500 ease-in-out ${props.link ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0 overflow-hidden'}`}
+                >
+                    {props.link && <Video video={props.link} title={props.title} />}
                 </div>
             </div>
-            <div className={`${props.display == VideoCardDisplay.left ? "w-[40%]" : props.display == VideoCardDisplay.right ? "w-0" : "w-[20%]"}`}></div>
+
+            {/* Right Spacer */}
+            <div className={`w-[5%]`}></div>
         </main>
     )
 }

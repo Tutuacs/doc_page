@@ -22,11 +22,10 @@ export default function Home() {
         </Container>
         <div className="w-full h-full bg-quaternary">
           <Container>
-            <PainHub>
-            </PainHub>
+            <PainHub />
           </Container>
         </div>
-          <div className="w-full h-[200px]"></div>
+        <div className="w-full h-[200px]"></div>
       </main>
     </div>
   );

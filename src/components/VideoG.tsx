@@ -28,7 +28,7 @@ export default function VideoG({ props }: { props: VideoGProps }) {
                         Você já parou para pensar como pequenas decisões podem mudar completamente o rumo da sua vida? Assim como um evento que quase deixamos de ir pode nos trazer boas surpresas, cuidar da sua saúde ortopédica pode ser o início de uma grande transformação.
                     </p>
                     <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed mb-4 hidden lg:block">
-                        Sou o Dr. Juliano Machado, especialista em lesões ortopédicas, e meu objetivo é ajudar você a superar limitações físicas e dores que impedem sua vida de ser plena. Não deixe a dor paralisar seus movimentos e o pouco tempo que temos. Imagine como será sua vida daqui a 6 meses ou 1 ano, com mais liberdade de movimento, mais disposição e momentos incríveis ao lado das pessoas que você ama.
+                        Sou o Dr. Juliano Machado, especialista em lesões ortopédicas, e meu objetivo é ajudar você a superar limitações físicas e dores que impedem sua vida de ser plena. Não deixe a dor limitar seus movimentos e seu precioso tempo. Imagine como será sua vida daqui a 6 meses ou 1 ano, com mais liberdade de movimento, mais disposição e momentos incríveis ao lado das pessoas que você ama.
                     </p>
                     <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed">
                         Acredite: cuidar de você é a escolha certa, e eu estarei ao seu lado em cada passo dessa jornada. Vamos começar hoje?
@@ -37,7 +37,7 @@ export default function VideoG({ props }: { props: VideoGProps }) {
 
                 {/* Right Content: Video Section */}
                 <div className="bg-secondary w-full lg:w-[60%] flex justify-center items-center p-4 lg:p-6">
-                    <Video video={props.video} />
+                    <Video video={props.video} title={props.title} />
                 </div>
             </div>
         </main>
