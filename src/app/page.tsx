@@ -8,7 +8,7 @@ export default function Home() {
   const video1: VideoGProps = {
     title: "O Cuidado Que Você Merece",
     image: "Thumbnail",
-    video: "https://www.youtube.com/embed/kNKCqeDnOis?si=8dHZiiZS83nvaCAA?rel=0&autoplay=1&mute=1",
+    video: "https://www.youtube.com/embed/kNKCqeDnOis?rel=0&autoplay=1&mute=1",
     display: VideoCardDisplay.right,
     autoplay: true,
     muted: true,

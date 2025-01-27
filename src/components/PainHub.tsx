@@ -17,12 +17,12 @@ export default function PainHub() {
             videos: [
                 {
                     Title: "“O que eu penso sobre tratamento ortopédico?”",
-                    Link: "https://www.youtube.com/embed/d1bfkBRSST8?rel=0&autoplay=0&mute=0",
+                    Link: "https://www.youtube.com/embed/d1bfkBRSST8?rel=1&autoplay=0&mute=0",
                     Description: "Sera que tempo é realmente o nosso bem mais precioso? Para mim Tempo de qualidade é o nosso bem mais precioso, e a dor pode roubar esse pouco tempo que temos com filhos, netos, nos exercitando... Mas como a ortopedia pode te ajudar a recuperar esse tempo? Assista o vídeo e descubra!"
                 },
                 {
                     Title: "“Doutor, qual é um remédio bom para…”",
-                    Link: "https://www.youtube.com/embed/LsqWskZQhDU",
+                    Link: "https://www.youtube.com/embed/LsqWskZQhDU?rel=1&autoplay=0&mute=0",
                     Description: "Assim como uma receita de bolo pode não matar sua fome, um remedio ortopedico pode não ser a solucao para o seu problema, variando seu estilo de vida e saude seu tratamento pode ser diferente. Assista o vídeo e descubra!"
                 },
             ],
@@ -33,12 +33,12 @@ export default function PainHub() {
             videos: [
                 {
                     Title: "“O que é bursite no ombro?”",
-                    Link: "https://www.youtube.com/embed/mGhufvzea-I?si=7F94BWTS8SP5Q3Ny",
+                    Link: "https://www.youtube.com/embed/mGhufvzea-I?rel=1&autoplay=0&mute=0",
                     Description: "A bursite no ombro é uma inflamação da bursa, ela é responsavel por proteger os tendoes e ligamentos do atrito com os ossos. Mas o que causa a bursite no ombro? Quais os sintomas? Como tratar? Assista o vídeo e descubra!"
                 },
                 {
                     Title: "“Ruptura do manguito rotador!”",
-                    Link: "https://www.youtube.com/embed/bJLs9fQslcI",
+                    Link: "https://www.youtube.com/embed/bJLs9fQslcI?rel=1&autoplay=0&mute=0",
                     Description: "Quanto mais tempo sem buscar a causa das dores no ombro, maiores as chances de ocorrer uma ruptura do manguito rotador, ela é uma lesao comum no ombro, ela pode ser causada por um trauma ou pelo desgaste natural do tendao. Mas como saber se voce tem uma ruptura do manguito rotador? Quais os sintomas? Como tratar? Assista o vídeo e descubra!"
                 },
             ],
@@ -49,22 +49,22 @@ export default function PainHub() {
             videos: [
                 {
                     Title: '“Quem tem problema de coluna nunca mais fica bom…”',
-                    Link: "https://www.youtube.com/embed/skg2YCuLZYo?si=Vd6pfPaF90c6B34h",
+                    Link: "https://www.youtube.com/embed/skg2YCuLZYo?rel=1&autoplay=0&mute=0",
                     Description: "Segundo a OMS(Organização Mundial de Saúde) aproximadamente 80% da populacao sofre ou vai sofrer problemas de coluna. Mas será que quem tem problema de coluna nunca mais fica bom? As unica solucao é cirurgia? Assista o vídeo e descubra!"
                 },
                 {
                     Title: '“Será que após os "ENTA (40, 50, 60…)" não teremos mais saúde?”',
-                    Link: "https://www.youtube.com/embed/kHSD6vgW1Gk",
+                    Link: "https://www.youtube.com/embed/kHSD6vgW1Gk?rel=1&autoplay=0&mute=0",
                     Description: 'A expectativa do povo brasileiro so aumenta, mas se apos os "enta" não tivermos mais saude, de que adianta viver mais? Será que apos os "enta" não ter saude não tem mais jeito? Assista o vídeo e descubra!'
                 },
                 {
                     Title: '“Dr. o que é hérnia de disco?”',
-                    Link: "https://www.youtube.com/embed/Xc1Ygveu7Ko",
+                    Link: "https://www.youtube.com/embed/Xc1Ygveu7Ko?rel=1&autoplay=0&mute=0",
                     Description: "A hérnia de disco é uma lesão que ocorre na coluna vertebral, ela é causada pelo desgaste natural do disco intervertebral, mas o que causa a hérnia de disco? Quais os sintomas? Como tratar? Assista o vídeo e descubra!"
                 },
                 {
                     Title: '“O que é osteoporose?”',
-                    Link: "https://www.youtube.com/embed/eQpaAmO-ZrM",
+                    Link: "https://www.youtube.com/embed/eQpaAmO-ZrM?rel=1&autoplay=0&mute=0",
                     Description: "A osteoporose é uma doença que enfraquece os ossos, ela é mais comum em mulheres após a menopausa, mas o que causa a osteoporose? Quais os sintomas? Como tratar? Assista o vídeo e descubra!"
                 },
             ],
@@ -75,7 +75,7 @@ export default function PainHub() {
             videos: [
                 {
                     Title: "“Dr. qual a importância do checkup ortopédico?”",
-                    Link: "https://www.youtube.com/embed/UCXd2ncRaC8",
+                    Link: "https://www.youtube.com/embed/UCXd2ncRaC8?rel=1&autoplay=0&mute=0",
                     Description: "Segundo dados de 2020 a expectativa no Brasil subiu para 80 anos, mas de que adianta estarmos vivendo mais mas sem qualidade? Precisamos cuidar do nosso corpo mais do que nossos bens. Assista o video e descubra!"
                 },
             ],
@@ -86,7 +86,7 @@ export default function PainHub() {
             videos: [
                 {
                     Title: "“Não gosto de médicos, só vou quando não aguento mais…”",
-                    Link: "https://www.youtube.com/embed/eH81cIw7F34",
+                    Link: "https://www.youtube.com/embed/eH81cIw7F34?rel=1&autoplay=0&mute=0",
                     Description: "E se não fizessemos as revisoes programadas de nossos carros? E se so levássemos ao mecânico quando o carro quebrasse? Será que o carro duraria tanto? E se fizessemos o mesmo com nosso corpo? Será que ele duraria tanto? Assista o vídeo e descubra!"
                 },
             ],

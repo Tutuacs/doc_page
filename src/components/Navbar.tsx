@@ -56,11 +56,11 @@ const Navbar = () => {
                 </div>
 
                 <div className="hidden lg:flex gap-8 mr-[15%]">
-                    <a href="https://wa.me/+5554996601120" target="_blank" className="bg-primary hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
+                    <a href="https://wa.me/+558196317222" target="_blank" className="bg-primary hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
                         <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1waG9uZSI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+" alt="" />
-                        <span className="mt-1">(54) 99660-1120</span>
+                        <span className="mt-1">(81) 9631-7222</span>
                     </a>
-                    <a href="https://wa.me/+5554996601120" target="_blank" className="bg-primary hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
+                    <a href="https://wa.me/+558196317222" target="_blank" className="bg-primary hidden lg:flex gap-3 justify-center text-center border-2 p-2 rounded-lg  border-secondary hover:border-[#009688] transition-colors text-white hover:underline">
                         <Image width={30} height={30} src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1jYWxlbmRhci1jaGVjay0yIj48cGF0aCBkPSJNOCAydjQiLz48cGF0aCBkPSJNMTYgMnY0Ii8+PHBhdGggZD0iTTIxIDE0VjZhMiAyIDAgMCAwLTItMkg1YTIgMiAwIDAgMC0yIDJ2MTRhMiAyIDAgMCAwIDIgMmg4Ii8+PHBhdGggZD0iTTMgMTBoMTgiLz48cGF0aCBkPSJtMTYgMjAgMiAyIDQtNCIvPjwvc3ZnPg==" alt="" />
                         <span className="mt-1">Agendamentos</span>
                     </a>
@@ -70,15 +70,19 @@ const Navbar = () => {
             {isExpanded && (
                 <div className="grid grid-cols-1 justify-between mr-[10%] ml-[10%] lg:ml-[15%] mt-10 gap-4">
                     {/* Esquerda */}
-                    <div className="flex flex-col gap-4 flex-1">
-                        <Link href="/Sobre" className="hover:underline" onClick={() => setIsExpanded(false)}>
-                            Sobre
+                    <div className="flex flex-col gap-4 flex-1 text-2xl">
+                        <Link href="/Sobre" className="hover:underline font-bold" onClick={() => setIsExpanded(false)}>
+                            <h1>
+                                Sobre
+                            </h1>
                         </Link>
                         {/* <Link href="/Contato" className="hover:underline" onClick={() => setIsExpanded(false)}>
                             Contato
                         </Link> */} {/* Without Contact */}
-                        <Link href="/Mitos" className="hover:underline" onClick={() => setIsExpanded(false)}>
-                            Mitos e Verdades da Ortopedia
+                        <Link href="/Contato" className="hover:underline font-bold text-2xl" onClick={() => setIsExpanded(false)}>
+                            <h1>
+                                Contato
+                            </h1>
                         </Link>
                     </div>
                     {/* Centro */}

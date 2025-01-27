@@ -9,7 +9,7 @@ export default function Footer() {
                 <div className="flex lg:flex-row flex-col items-center mx-auto h-60 w-[80%] lg:w-[60%] rounded-lg">
                     <div className="bg-tertiary p-4 lg:p-0 flex flex-col h-full w-full lg:w-1/2 justify-center rounded-t-xl lg:rounded-l-xl lg:rounded-tr-none">
                         <div className="mx-auto">
-                            <div className="lg:text-3xl text-xl text-[#EEEEEE] font-bold text-center">Agende sua consulta</div>
+                            <h1 className="lg:text-3xl text-xl text-[#EEEEEE] font-bold text-center">Agende sua consulta</h1>
                             {/* <hr className="mt-2 mb-1 border-[#033147]" /> */}
                             <div className="mt-4 text-center">
                                 <a
@@ -25,7 +25,7 @@ export default function Footer() {
                     </div>
                     <div className="bg-secondary flex flex-col p-4 lg:p-0 gap-2 lg:gap-4 w-full lg:w-1/2 h-full justify-center rounded-b-xl lg:rounded-r-xl lg:rounded-bl-none">
                         <div className="mx-auto">
-                            <div className="text-[#033147e3] lg:text-2xl text-xl font-bold text-center">Acompanhe nas redes sociais</div>
+                            <h1 className="text-[#033147e3] lg:text-2xl text-xl font-bold text-center">Acompanhe nas redes sociais</h1>
                             <hr className="mt-2 mb-1 border-[#033147]" />
                             <div className="mt-4 text-center flex gap-8 justify-center">
                                 { /* Facebook */}
@@ -79,8 +79,57 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div className="bg-primary min-h-96">
+            <div className="bg-primary h-[150px]">
             </div>
+            <div className="bg-primary w-full h-80">
+                <div className="flex justify-center items-center h-full w-full">
+                    <div className="w-[80%] lg:w-[60%] flex flex-col lg:flex-row justify-between items-center">
+                        <div className="w-full">
+                            <Image
+                                src={"/assinatura.png"}
+                                width={200}
+                                height={50}
+                                alt="Assinatura logo"
+                                className="lg:flex hidden lg:col-span-1"
+                            />
+                            <h1 className="text-[#EEEEEE] font-bold lg:flex hidden lg:col-span-1">
+                                Juliano Machado - Ortopedista e Traumatologista
+                            </h1>
+                        </div>
+                        <div className="flex flex-col w-full justify-center items-center text-[#EEEEEE] font-bold">
+                            <div className="flex items-center justify-start gap-4 -ml-20 mb-1">
+                                <Image
+                                    width={30}
+                                    height={30}
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDk2ODgiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBjbGFzcz0ibHVjaWRlIGx1Y2lkZS1waG9uZSI+PHBhdGggZD0iTTIyIDE2LjkydjNhMiAyIDAgMCAxLTIuMTggMiAxOS43OSAxOS43OSAwIDAgMS04LjYzLTMuMDcgMTkuNSAxOS41IDAgMCAxLTYtNiAxOS43OSAxOS43OSAwIDAgMS0zLjA3LTguNjdBMiAyIDAgMCAxIDQuMTEgMmgzYTIgMiAwIDAgMSAyIDEuNzIgMTIuODQgMTIuODQgMCAwIDAgLjcgMi44MSAyIDIgMCAwIDEtLjQ1IDIuMTFMOC4wOSA5LjkxYTE2IDE2IDAgMCAwIDYgNmwxLjI3LTEuMjdhMiAyIDAgMCAxIDIuMTEtLjQ1IDEyLjg0IDEyLjg0IDAgMCAwIDIuODEuN0EyIDIgMCAwIDEgMjIgMTYuOTJ6Ii8+PC9zdmc+"
+                                    alt="Telefone ligar"
+                                />
+                                <h1 className="text-[#EEEEEE] font-bold">
+                                    Telefones:
+                                </h1>
+                            </div>
+                            <ul className="text-[#EEEEEE] list-none pl-0 flex flex-col items-end gap-1">
+                                <li>(81) 3221-5514</li>
+                                <li>(81) 3216-3606</li>
+                                <li>(81) 3216-3619</li>
+                            </ul>
+                            <Link className="mt-5 hover:animate-pulse p-2 border bg-secondary border-[#009688] rounded-full" href={"https://maps.app.goo.gl/cKrTtQS2K2s38ryQ7"}>
+                                <div className="flex gap-4 text-[#009688] font-bold">
+                                    <div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#009688" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-map-pinned">
+                                            <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0" />
+                                            <circle cx="12" cy="8" r="2" /><path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
+                                        </svg>
+                                    </div>
+                                    Veja no mapa!
+                                </div>
+                            </Link>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <div className="bg-[#033147] text-slate-300 py-2 min-h-8 flex lg:flex-row flex-col align-center justify-center lg:justify-between items-center italic text-sm">
                 <div className="flex justify-center items-center mt-1 mb-3 w-full">
                     <Assinatura />

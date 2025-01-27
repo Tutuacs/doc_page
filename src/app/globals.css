@@ -18,6 +18,10 @@
   }
 }
 
+h1 {
+  font-family: var(--font-plus-jakarta);
+}
+
 .bg-primary {
   background-color: var(--primary);
 }
