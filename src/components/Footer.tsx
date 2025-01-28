@@ -113,10 +113,10 @@ export default function Footer() {
                                 <li>(81) 3216-3606</li>
                                 <li>(81) 3216-3619</li>
                             </ul>
-                            <Link className="mt-5 hover:animate-pulse p-2 border bg-secondary border-[#009688] rounded-full" href={"https://maps.app.goo.gl/cKrTtQS2K2s38ryQ7"}>
+                            <Link className="mt-5 hover:animate-pulse py-2 px-4 border bg-secondary border-[#009688] rounded-full" href={"https://maps.app.goo.gl/cKrTtQS2K2s38ryQ7"}>
                                 <div className="flex gap-4 text-[#009688] font-bold">
                                     <div>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#009688" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round" className="lucide lucide-map-pinned">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#009688" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-map-pinned">
                                             <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0" />
                                             <circle cx="12" cy="8" r="2" /><path d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712" />
                                         </svg>

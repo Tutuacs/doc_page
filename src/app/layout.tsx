@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://drjulianomachado.com.br/wp-content/uploads/2022/03/logoJu-300x131.png"
+        url: "https://drjulianomachado.com.br/wp-content/uploads/2022/03/logoJu-300x131.png",
       }
     ]
   }
@@ -44,7 +44,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${plusJakarta.variable} antialiased p-0`}
       >
         <Navbar />
-        <Image width={1920} height={1000} src="/bg1.jpg" alt="" className="lg:block w-[100%] border-b-8 border-[#009688]" />
+        <Image width={1920} height={1000} src="/bg1.jpg" alt="" className="lg:block w-[100%] border-b-8 border-[#009688]" priority={true} />
         {/* <Thumb /> */}
         {children}
         <Footer />

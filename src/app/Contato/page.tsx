@@ -30,19 +30,19 @@ export default function Contact() {
     };
 
     return (
-        <main>
+        <main className="-mt-20">
             <Container>
                 <main className="min-h-screen flex flex-col items-center justify-center">
                     <div className="max-w-4xl bg-secondary shadow-b-lg rounded-2xl overflow-hidden w-full">
                         {/* Header Section */}
-                        <div className="bg-primary text-white p-8 text-center">
-                            <h1 className="text-2xl lg:text-4xl font-bold">Entre em Contato</h1>
-                            <p className="text-sm lg:text-lg mt-2">Fale conosco preenchendo o formulário abaixo</p>
+                        <div className="bg-primary text-[#009688] p-8 text-center">
+                            <h1 className="text-2xl lg:text-4xl font-bold text-[#009688]">Entre em Contato</h1>
+                            <p className="text-sm lg:text-lg mt-2 text-[#EEEEEE]">Fale conosco preenchendo o formulário abaixo</p>
                         </div>
 
                         {/* Form Section */}
                         <div className="bg-quaternary p-8">
-                            <form onSubmit={handleSubmit} className="space-y-6">
+                            <form onSubmit={handleSubmit} className="space-y-6" id="contact">
                                 <div className="grid lg:grid-cols-2 gap-6">
                                     <div>
                                         <label htmlFor="name" className="block text-gray-700 font-bold mb-2">Nome</label>

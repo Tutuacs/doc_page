@@ -17,12 +17,12 @@ export default function PainHub() {
             videos: [
                 {
                     Title: "“O que eu penso sobre tratamento ortopédico?”",
-                    Link: "https://www.youtube.com/embed/d1bfkBRSST8?rel=1&autoplay=0&mute=0",
+                    Link: "https://www.youtube.com/embed/d1bfkBRSST8?rel=1&autoplay=0&mute=0", // ! Caut
                     Description: "Sera que tempo é realmente o nosso bem mais precioso? Para mim Tempo de qualidade é o nosso bem mais precioso, e a dor pode roubar esse pouco tempo que temos com filhos, netos, nos exercitando... Mas como a ortopedia pode te ajudar a recuperar esse tempo? Assista o vídeo e descubra!"
                 },
                 {
                     Title: "“Doutor, qual é um remédio bom para…”",
-                    Link: "https://www.youtube.com/embed/LsqWskZQhDU?rel=1&autoplay=0&mute=0",
+                    Link: "https://www.youtube.com/embed/LsqWskZQhDU?rel=1&autoplay=0&mute=0",  // ! Caut
                     Description: "Assim como uma receita de bolo pode não matar sua fome, um remedio ortopedico pode não ser a solucao para o seu problema, variando seu estilo de vida e saude seu tratamento pode ser diferente. Assista o vídeo e descubra!"
                 },
             ],

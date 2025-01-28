@@ -34,7 +34,7 @@ export default function VideoCard({ props }: { props: VideoCardProps }) {
                 <div
                     className={`bg-secondary w-full lg:w-[60%] flex justify-center items-center p-4 lg:p-6 transition-all duration-500 ease-in-out ${props.link ? 'opacity-100 max-h-screen' : 'opacity-0 max-h-0 overflow-hidden'}`}
                 >
-                    {props.link && <Video video={props.link} title={props.title} />}
+                    <Video video={props.link} title={props.title} />
                 </div>
             </div>
 
