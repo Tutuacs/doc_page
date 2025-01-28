@@ -24,13 +24,13 @@ export default function VideoG({ props }: { props: VideoGProps }) {
                 <div className="bg-[#033147] w-full lg:w-[40%] p-6 lg:p-10 flex flex-col justify-center">
                     <h1 className="text-[#009687] font-bold text-center lg:text-start text-xl lg:text-3xl mb-4">{props.title}</h1>
                     <hr className="w-[80%] mx-auto lg:mx-0 lg:w-[70%] border-gray-400 mb-4 hidden lg:block" />
-                    <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed mb-4 hidden lg:block">
+                    <p className="text-[#EEEEEE] text-justify lg:text-justify text-sm lg:text-base leading-relaxed mb-4 hidden lg:block">
                         Você já parou para pensar como pequenas decisões podem mudar completamente o rumo da sua vida? Assim como um evento que quase deixamos de ir pode nos trazer boas surpresas, cuidar da sua saúde ortopédica pode ser o início de uma grande transformação.
                     </p>
-                    <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed mb-4 hidden lg:block">
+                    <p className="text-[#EEEEEE] text-justify lg:text-justify text-sm lg:text-base leading-relaxed mb-4 hidden lg:block">
                         Sou o Dr. Juliano Machado, especialista em lesões ortopédicas, e meu objetivo é ajudar você a superar limitações físicas e dores que impedem sua vida de ser plena. Não deixe a dor limitar seus movimentos e seu precioso tempo. Imagine como será sua vida daqui a 6 meses ou 1 ano, com mais liberdade de movimento, mais disposição e momentos incríveis ao lado das pessoas que você ama.
                     </p>
-                    <p className="text-[#EEEEEE] text-start lg:text-start text-sm lg:text-base leading-relaxed">
+                    <p className="text-[#EEEEEE] text-justify lg:text-justify text-sm lg:text-base leading-relaxed">
                         Acredite: cuidar de você é a escolha certa, e eu estarei ao seu lado em cada passo dessa jornada. Vamos começar hoje?
                     </p>
                 </div>
