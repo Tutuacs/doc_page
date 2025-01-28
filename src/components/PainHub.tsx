@@ -172,7 +172,7 @@ export default function PainHub() {
                             {selectedContent}
                             <br />
                             <br />
-                            <span className="font-bold text-[#FFFFFF]">{selectedBold}</span>
+                            <span className="text-justify font-bold text-[#FFFFFF]">{selectedBold}</span>
                         </p>
                         <hr className="w-full mx-auto mb-4" />
                         <div className="flex flex-col gap-4">
