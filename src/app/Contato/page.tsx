@@ -7,6 +7,7 @@ import { useState } from "react";
   --primary: #033147e3;
   --secondary: #EEEEEE;
   --tertiary: #009688;
+  --quaternary: #dbe0da;
 */
 
 export default function Contact() {
