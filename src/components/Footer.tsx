@@ -140,7 +140,7 @@ export default function Footer() {
                 <hr className="border-1 ml-[5%] mr:ml-[10%] lg:ml-[20%] w-[70%] mb-1 lg:hidden" />
                 <div className="flex justify-center items-center mt-1 mb-3 w-full">
                     <p>Desenvolvido por </p>
-                    <span className="ml-1 font-bold">Arthur Silva</span>
+                    <Link href="https://www.linkedin.com/in/arthur-silva-277606250" className="ml-1 font-bold">Arthur Silva</Link>
                 </div>
             </div>
         </main>
