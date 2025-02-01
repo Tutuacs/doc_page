@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "https://drjulianomachado.com.br/wp-content/uploads/2022/03/logoJu-300x131.png",
+        url: "/assinatura.svg",
       }
     ]
   }
