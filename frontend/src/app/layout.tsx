@@ -3,8 +3,8 @@ import { Geist, Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import Thumb from "@/components/Thumb";
-import Image from "next/image";
+import Thumb from "@/components/Thumb";
+// import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -44,8 +44,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${plusJakarta.variable} antialiased p-0`}
       >
         <Navbar />
-        <Image width={1920} height={1000} src="/bg1.jpg" alt="" className="lg:block w-[100%] border-b-8 border-[#009688]" priority={true} />
-        {/* <Thumb /> */}
+        {/*<Image width={1920} height={1000} src="/bg1.jpg" alt="" className="lg:block w-[100%] border-b-8 border-[#009688]" priority={true} /> */}
+        <Thumb />
         {children}
         <Footer />
       </body>
