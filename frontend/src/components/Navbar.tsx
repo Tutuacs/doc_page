@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <nav
             className={`${isTop && !isExpanded ? "bg-transparent" : "bg-primary"
-                } text-white flex flex-col w-full fixed p-4 overflow-hidden ${isExpanded ? "animate-expand" : "animate-collapse"
+                } text-white z-20 flex flex-col w-full fixed p-4 overflow-hidden ${isExpanded ? "animate-expand" : "animate-collapse"
                 } transition-all duration-300 ease-in-out`}
         >
             {/* Navbar principal */}
