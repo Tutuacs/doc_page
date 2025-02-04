@@ -1,3 +1,4 @@
+import AnimatedContent from "@/components/AnimatedContent";
 import Container from "@/components/Container";
 // import PainBody from "@/components/PainBody";
 import PainHub from "@/components/PainHub";
@@ -19,7 +20,9 @@ export default function Home() {
     <div className="min-h-[1500px]">
       <main>
         <Container>
-          <VideoG props={video1} />
+          <AnimatedContent>
+            <VideoG props={video1} />
+          </AnimatedContent>
         </Container>
         <div className="w-full h-full bg-quaternary">
           <Container>
