@@ -1,0 +1,12 @@
+# Back
+
+/dist
+/node_modules
+test
+.eslintrc.js
+.git
+.gitignore
+.prettierrc.js
+*-lock.*
+README.md
+vercel.json

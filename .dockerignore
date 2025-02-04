@@ -1,0 +1,23 @@
+# Back
+
+/backend/dist
+/backend/node_modules
+/backend/test
+/backend/.eslintrc.js
+/backend/.git
+/backend/.gitignore
+/backend/.prettierrc.js
+/backend/*-lock.*
+/backend/README.md
+/backend/vercel.json
+
+# Front
+
+/frontend/.next
+/frontend/node_modules
+/frontend/.git
+/frontend/.gitignore
+# /frontend/eslint*
+/frontend/*-lock.*
+# /frontend/postcss*
+/frontend/README.md
