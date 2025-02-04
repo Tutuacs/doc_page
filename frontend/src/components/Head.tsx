@@ -14,16 +14,16 @@ export default function Head({page, description, title}: HeadProps) {
       <meta name='description' content='' />
       <meta property='og:title' content={`${page} | ${title}`} />
       <meta property='og:description' content={description} />
-      <meta property='og:image' content='/assinatura.svg' />
+      <meta property='og:image' content='/assinatura.png' />
       <meta property='og:image:alt' content='' />
       <meta property='og:locale' content='pt_BR' />
       <meta property='og:type' content='website' />
       <meta property='og:url' content='https://url.com' />
-      <meta name='twitter:card' content='assinatura.svg' />
+      <meta name='twitter:card' content='/assinatura.png' />
       <meta name='theme-color' content='#0099ff' />
       <link rel='canonical' href='https://url.com' />
-      <link rel='icon' href='/assinatura.svg' type='image/svg+xml' />
-      <link rel='apple-touch-icon' href='/assinatura.svg' />
+      <link rel='icon' href='/assinatura.png' type='image/svg+xml' />
+      <link rel='apple-touch-icon' href='/assinatura.png' />
       <link
          rel='manifest'
         crossOrigin='use-credentials'
