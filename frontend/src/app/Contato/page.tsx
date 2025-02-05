@@ -1,7 +1,6 @@
 "use client";
 
 import Container from "@/components/Container";
-import { env } from "process";
 import { useState } from "react";
 
 /*
@@ -100,12 +99,11 @@ export default function Contact() {
   
         if (res.status === 200) {
           setSubmissionStatus("success");
-          console.log("Form Data Submitted:", formData);
           // Opcional: Limpar o formulário ou realizar outras ações após o sucesso
         } else {
           setSubmissionStatus("error");
         }
-      } catch (error) {
+      } catch {
         setSubmissionStatus("error");
       }
     } else {
