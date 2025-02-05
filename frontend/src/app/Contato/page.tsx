@@ -48,7 +48,7 @@ export default function Contact() {
     if (formData.email.trim() === "") {
       newErrors.email = "Email é obrigatório.";
       valid = false;
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+    } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(formData.email)) {
       newErrors.email = "Email inválido.";
       valid = false;
     }
