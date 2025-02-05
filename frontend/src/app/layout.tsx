@@ -22,7 +22,7 @@ const plusJakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Juliano Machado - Medico Ortopedista",
+  title: "Dr. Juliano Machado - Médico Ortopedista",
   description: "Ortopedista e Traumatologista | Recife - PE",
   openGraph: {
     images: [

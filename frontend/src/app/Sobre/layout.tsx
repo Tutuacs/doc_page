@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Sobre Medico Ortopedista - Juliano Machado",
+    title: "Sobre Médico Ortopedista - Juliano Machado",
     description: "Ortopedista e Traumatologista | Recife - PE",
 };
 
