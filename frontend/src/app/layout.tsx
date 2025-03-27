@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "/assinatura.png",
+        url: "http://69.62.88.84:3000/assinatura.png",
       }
     ]
   }
