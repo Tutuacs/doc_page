@@ -4,9 +4,9 @@ services:
       context: ./backend
       dockerfile: Dockerfile
     container_name: doc_page_backend
-    ports:
-      - "3333:3333"
     restart: always
+    networks:
+      - doc_page
 
   doc_page_frontend:
     build:
@@ -18,3 +18,8 @@ services:
     restart: always
     depends_on:
       - doc_page_backend
+    networks:
+      - doc_page
+
+networks:
+  doc_page:

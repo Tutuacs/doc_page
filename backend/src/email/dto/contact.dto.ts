@@ -10,7 +10,6 @@ export class ContactDto {
     email: string;
 
     @IsString()
-    @IsPhoneNumber("BR")
     phone: string;
 
     @IsString()

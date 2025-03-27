@@ -25,7 +25,6 @@ __decorate([
 ], ContactDto.prototype, "email", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
-    (0, class_validator_1.IsPhoneNumber)("BR"),
     __metadata("design:type", String)
 ], ContactDto.prototype, "phone", void 0);
 __decorate([

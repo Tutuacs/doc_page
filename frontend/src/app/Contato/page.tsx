@@ -15,7 +15,7 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
-    subject: "",
+    about: "",
     message: ""
   });
 
@@ -23,7 +23,7 @@ export default function Contact() {
     name: "",
     email: "",
     phone: "",
-    subject: "",
+    about: "",
     message: ""
   });
 
@@ -36,7 +36,7 @@ export default function Contact() {
       name: "",
       email: "",
       phone: "",
-      subject: "",
+      about: "",
       message: ""
     };
 
@@ -58,8 +58,8 @@ export default function Contact() {
       valid = false;
     }
 
-    if (formData.subject.trim() === "") {
-      newErrors.subject = "Assunto é obrigatório.";
+    if (formData.about.trim() === "") {
+      newErrors.about = "Assunto é obrigatório.";
       valid = false;
     }
 
@@ -169,17 +169,17 @@ export default function Contact() {
                     {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
                   </div>
                   <div>
-                    <label htmlFor="subject" className="block text-gray-700 font-bold mb-2">Assunto</label>
+                    <label htmlFor="about" className="block text-gray-700 font-bold mb-2">Assunto</label>
                     <input
                       type="text"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
+                      id="about"
+                      name="about"
+                      value={formData.about}
                       onChange={handleInputChange}
-                      className={`text-[#033147] bg-secondary w-full p-3 rounded-lg border focus:border-none focus:outline-none focus:ring focus:ring-[#009688] ${errors.subject ? "border-red-500" : "border-[#033147]"}`}
+                      className={`text-[#033147] bg-secondary w-full p-3 rounded-lg border focus:border-none focus:outline-none focus:ring focus:ring-[#009688] ${errors.about ? "border-red-500" : "border-[#033147]"}`}
                       placeholder="Assunto da mensagem"
                     />
-                    {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
+                    {errors.about && <p className="text-red-500 text-sm mt-1">{errors.about}</p>}
                   </div>
                 </div>
 
